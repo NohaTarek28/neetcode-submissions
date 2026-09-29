@@ -1,0 +1,83 @@
+class Solution {
+public:
+    bool hasDuplicate(vector<int>& nums) {
+        unordered_map<int,int> freq;
+        for(int i=0; i<nums.size();i++)
+        {
+            freq[nums[i]]++;
+        }
+        for(auto n :freq)
+        {
+            if(n.second >1)
+            {
+                return true;
+            }
+        }
+        return false;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // // unordered_map<int,int> freq; 
+        // // for(int i =0; i<nums.size();i++)
+        // // {
+        // //     freq[nums[i]]++;
+        // // }
+        // // for(auto n : freq)
+        // // {
+        // //     if (n.second > 1)
+        // //     {
+        // //         return true;
+        // //     }
+        // // }
+        // // return false;
+        // unordered_set<int> freq;
+        // for (int num :nums )
+        // {
+        //     if (freq.count(num)){
+        //         return true;
+        //     }
+        //     freq.insert(num);
+        // }
+        // return false;
+
+
+
+    }
+};
